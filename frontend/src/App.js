@@ -9,15 +9,16 @@ function App() {
   useEffect(() => {
     const getId = async () => {
       try {
-        const resp = await fetch(API_URL)
-        setSuccessMessage((await resp.json()).id)
+        const resp = await fetch(API_URL);
+        const data = await resp.json();
+        setSuccessMessage(data.message);
       }
       catch(e) {
         setFailureMessage(e.message)
       }
     }
     getId()
-  })
+  },[])
 
   return (
     <div className="App">
