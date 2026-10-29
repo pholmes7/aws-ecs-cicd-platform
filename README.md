@@ -1,4 +1,4 @@
-# DevOps Technical Challenge
+# AWS ECS Fargate | Infrastructure Automation & CI/CD Platform
 
 ## Project Overview
 
